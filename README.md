@@ -48,3 +48,6 @@
 <p>👉 Insert the complete DC_VIES_Validator class code here 👈</p>
 <h1>SUPPORT</h1>
 <p>Report issues or request features on GitHub 🛠️</p>
+
+<p>Autor: <a href="https://www.designcart.pl/">Design Cart</a></p>
+<p>Project page: <a href="https://www.designcart.pl/laboratorium/272-jak-w-woocommerce-wyswietlic-pole-nip-gotowy-plugin-z-weryfikacja-vies.html">Jak w WooCommerce wyświetlić pole NIP — gotowy plugin z weryfikacją VIES</a></p>
