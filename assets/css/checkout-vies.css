@@ -1,0 +1,57 @@
+.woocommerce-additional-fields__field[data-field-id="dc-vies/nip_vat"] {
+    display: none !important;
+}
+
+.wc-block-components-text-input,
+.wc-block-components-text-input__input-wrapper {
+    transition: border-color 0.3s;
+}
+
+.wc-block-components-text-input.vies-valid input,
+.wc-block-components-text-input.vies-valid {
+    border-color: #27ae60 !important;
+    box-shadow: 0 0 0 1px #27ae60 !important;
+}
+
+.wc-block-components-text-input.vies-invalid input,
+.wc-block-components-text-input.vies-invalid {
+    border-color: #c0392b !important;
+    box-shadow: 0 0 0 1px #c0392b !important;
+}
+
+.wc-block-components-text-input.vies-loading {
+    opacity: 0.7;
+    cursor: wait;
+}
+
+/* Wskaźnik ładowania dla pola NIP/VAT */
+.wc-block-components-text-input.vies-loading {
+    position: relative;
+    opacity: 0.8; /* Zmniejsz widoczność */
+}
+
+/* Wskaźnik "kręcącego się kółeczka" - używamy tła */
+.wc-block-components-text-input.vies-loading input {
+    cursor: wait;
+}
+
+/* Dodajemy ikonę loading (opcjonalnie: wymaga font awesome lub tła base64) */
+.wc-block-components-text-input.vies-loading::after {
+    content: "";
+    position: absolute;
+    top: 50%;
+    right: 10px; /* Po prawej stronie */
+    transform: translateY(-50%);
+    width: 20px;
+    height: 20px;
+    border: 3px solid rgba(0, 0, 0, 0.1);
+    border-top: 3px solid #3498db; /* Kolor kółka */
+    border-radius: 50%;
+    animation: spin 1s linear infinite; /* Animacja kręcenia */
+}
+
+/* Definicja animacji kręcenia */
+@keyframes spin {
+    0% { transform: translateY(-50%) rotate(0deg); }
+    100% { transform: translateY(-50%) rotate(360deg); }
+}
